@@ -1,0 +1,61 @@
+// LOOK UP & DECITE ON BEST BPs
+
+/* BREAKPOINTS for 1.0 */
+$bp-mobile : 25em; /* 400px */
+$bp-small : 35em; /* 560px */
+$bp-small-up : 55em; /* px */
+$bp-medium : 62.5em; /* 1000px */
+$bp-large : 103.750em; /* 1660px */
+
+/* BREAKPOINTS for 1.1 */
+//$bp-small : 24em; // 384px
+//$bp-small-2 : 30.75em; // 492px
+//$bp-small-3 : 39.8em; // 624px
+//$bp-medium : 46.8em; // 748px
+//$bp-medium-2 : 47.5em; // 760px
+//$bp-large : 50em; // 800px
+//$bp-large-2 : 51.875em; // 830px
+//$bp-large-3 : 54.5em; // 872px
+//$bp-xl : 60em;
+//$bp-xl-2 : 67em;
+
+/* Mobile first
+// @-ms-viewport {
+//     width: device-width;
+// }
+
+/* px */
+@mixin mf-mobile {
+  @media only screen and (min-width: $bp-mobile) {
+    @content;
+  }
+}
+/* 560px */
+@mixin mf-small {
+  @media only screen and (min-width: $bp-small) {
+    @content;
+  }
+}
+/* px */
+@mixin mf-small-up {
+  @media only screen and (min-width: $bp-small-up) {
+    @content;
+  }
+}
+/* 840px */
+@mixin mf-medium {
+  @media only screen and (min-width: $bp-medium) {
+    @content;
+  }
+}
+/* 1680px */
+@mixin mf-large {
+  @media only screen and (min-width: $bp-large) {
+    @content;
+  }
+}
+@mixin landscape {
+  @media all and (orientation:landscape) {
+    @content;
+  }
+}

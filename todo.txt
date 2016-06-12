@@ -1,0 +1,12 @@
+// TODO
+
+1.0
+Media query - sm = last-child no border bottom. m last 2 children no border bottom etc
+
+acordian - lägg till margins på instruktionerna
+
+1.1
+
+
+
+2.0

@@ -1,0 +1,143 @@
+@import '../structure/_-structre-dir';
+
+// TYPE
+$font-primary: 'Myriad Pro', Roboto, Arial, sans-serif;
+$font-secondary: 'Abril Fatface', cursive;
+$font-size-14: 14px 1.4rem;
+$font-size-normal: 16px 1.6rem;
+$font-size-20: 20px 2rem;
+
+// ALIGNMENTS
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center { text-align: center; }
+
+.bold     { font-weight: bold; }
+.regular  { font-weight: normal !important; }
+.italic   { font-style: italic; }
+.caps     { text-transform: uppercase; }
+
+
+.text-down-2 {
+  font-size: 12px !important;
+}
+.text-down-1 {
+  font-size: 14px !important;
+}
+.text-normal {
+  font-size: $font-size-normal;
+}
+.text-up-1 {
+  font-size: 18px;
+}
+.text-up-2 {
+  font-size: 20px;
+}
+.text-up-4 {
+  font-size: 40px !important;
+}
+.text-up-5 {
+  font-size: 45px !important;
+}
+.no-bullets {
+  list-style-type: none;
+}
+
+.ell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.break-word { word-wrap: break-word; }
+.no-wrap    { white-space: nowrap; }
+
+// Colors
+.text-primary          { color: $primary; }
+.text-secondary        { color: $secondary; }
+.text-white            { color: $white; }
+.text-off-white        { color: $off-white; }
+.text-gray             { color: $gray; }
+.text-tint-gray        { color: lighten($gray, 10%); }
+.text-dark-gray        { color: $gray-333; }
+
+.text-notice           { color: $notice; }
+.text-success          { color: $success; }
+.text-alert            { color: $alert; }
+
+.text-yellow        { color: $yellow; }
+.text-yellow-tint   { color: lighten($yellow, 10%); }
+.text-yellow-tint-2 { color: lighten($yellow, 20%); }
+.text-yellow-tint-3 { color: lighten($yellow, 30%); }
+.text-yellow-tint-4 { color: lighten($yellow, 40%); }
+.text-yellow-tint-5 { color: lighten($yellow, 50%); }
+
+.text-pink        { color: $pink; }
+.text-pink-tint   { color: lighten($pink, 10%); }
+.text-pink-tint-2 { color: lighten($pink, 20%); }
+.text-pink-tint-3 { color: lighten($pink, 30%); }
+.text-pink-tint-4 { color: lighten($pink, 40%); }
+.text-pink-tint-5 { color: lighten($pink, 50%); }
+
+.text-purple        { color: $purple; }
+.text-purple-tint   { color: lighten($purple, 10%); }
+.text-purple-tint-2 { color: lighten($purple, 20%); }
+.text-purple-tint-3 { color: lighten($purple, 30%); }
+.text-purple-tint-4 { color: lighten($purple, 40%); }
+.text-purple-tint-5 { color: lighten($purple, 50%); }
+
+.text-teal        { color: $teal; }
+.text-teal-tint   { color: lighten($teal, 10%); }
+.text-teal-tint-2 { color: lighten($teal, 20%); }
+.text-teal-tint-3 { color: lighten($teal, 30%); }
+.text-teal-tint-4 { color: lighten($teal, 40%); }
+.text-teal-tint-5 { color: lighten($teal, 50%); }
+.text-teal-tint-6 { color: lighten($teal, 60%); }
+
+.text-green        { color: $green; }
+.text-green-tint   { color: lighten($green, 10%); }
+.text-green-tint-2 { color: lighten($green, 20%); }
+.text-green-tint-3 { color: lighten($green, 30%); }
+.text-green-tint-4 { color: lighten($green, 40%); }
+.text-green-tint-5 { color: lighten($green, 50%); }
+.text-green-tint-6 { color: lighten($green, 60%); }
+
+.text-light-green        { color: $light-green; }
+.text-light-green-tint   { color: lighten($light-green, 10%); }
+.text-light-green-tint-2 { color: lighten($light-green, 20%); }
+.text-light-green-tint-3 { color: lighten($light-green, 30%); }
+.text-light-green-tint-4 { color: lighten($light-green, 40%); }
+.text-light-green-tint-5 { color: lighten($light-green, 50%); }
+.text-light-green-tint-6 { color: lighten($light-green, 60%); }
+
+.text-indigo        { color: $indigo; }
+.text-indigo-tint   { color: lighten($indigo, 10%); }
+.text-indigo-tint-2 { color: lighten($indigo, 20%); }
+.text-indigo-tint-3 { color: lighten($indigo, 30%); }
+.text-indigo-tint-4 { color: lighten($indigo, 40%); }
+.text-indigo-tint-5 { color: lighten($indigo, 50%); }
+.text-indigo-tint-6 { color: lighten($indigo, 60%); }
+
+.text-blue        { color: $blue; }
+.text-blue-tint   { color: lighten($blue, 10%); }
+.text-blue-tint-2 { color: lighten($blue, 20%); }
+.text-blue-tint-3 { color: lighten($blue, 30%); }
+.text-blue-tint-4 { color: lighten($blue, 40%); }
+.text-blue-tint-5 { color: lighten($blue, 50%); }
+.text-blue-tint-6 { color: lighten($blue, 60%); }
+
+.text-cyan        { color: $cyan; }
+.text-cyan-tint   { color: lighten($cyan, 10%); }
+.text-cyan-tint-2 { color: lighten($cyan, 20%); }
+.text-cyan-tint-3 { color: lighten($cyan, 30%); }
+.text-cyan-tint-4 { color: lighten($cyan, 40%); }
+.text-cyan-tint-5 { color: lighten($cyan, 50%); }
+.text-cyan-tint-6 { color: lighten($cyan, 60%); }
+
+.text-green        { color: $green; }
+.text-green-tint   { color: lighten($green, 10%); }
+.text-green-tint-2 { color: lighten($green, 20%); }
+.text-green-tint-3 { color: lighten($green, 30%); }
+.text-green-tint-4 { color: lighten($green, 40%); }
+.text-green-tint-5 { color: lighten($green, 50%); }
+.text-green-tint-6 { color: lighten($green, 60%); }

@@ -1,0 +1,159 @@
+// IMPORTS
+@import "bourbon/bourbon";
+//@import "scss/font-awesome-sprockets";
+@import "scss/font-awesome";
+
+// DIRECTORIES
+@import 'presentation/_-presentation-dir';
+@import 'structure/_-structre-dir';
+@import 'behavior/-behavior-dir';
+
+@include font-face('FontAwesome', font-files( 'font-awesome/font/fontawesome-webfont.woff', woff, 'font-awesome/font/fontawesome-webfont.ttf', ttf, 'font-awesome/font/fontawesome-webfont.svg', svg), 'font-awesome/font/fontawesome-webfont.eot');
+
+%icon-font { font-family: 'FontAwesome', Helvetica, Arial, sans-serif; }
+
+
+
+
+// PARALLAX
+
+
+.img-center {
+width: 100%;
+height: auto;
+display: block; 
+margin: 0;
+background-image: url(http://before.kajsaunge.se/img/extra/bg.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+/*background-color: #464646;*/
+}
+    @media only screen and (max-width: 767px) {
+        .img-center {    
+        background-image: url(img/bg-small.jpg);
+        }
+    }
+.parallax {
+// height: 100vh;
+// overflow-x: hidden;
+// overflow-y: auto;
+// -webkit-perspective: 1px;
+// perspective: 1px;
+}
+.parallax__layer {
+padding: 100vh 0;
+}
+.parallax__layer {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+.parallax__layer--base {
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+}
+.parallax__layer--back {
+-webkit-transform: translateZ(-1px);
+transform: translateZ(-1px);
+}
+.parallax__layer--back--img {
+-webkit-transform: translateZ(-2px);
+transform: translateZ(-2px);
+margin:0;
+padding:0;
+display: block; 
+}
+// NEWLY ADDED - THIS IS WHERE YOU ARE
+// .z1 {
+//     z-index: -100;
+// }
+// .z2 {
+//     z-index: -200;
+// }
+// .z3 {
+//     z-index: -300;
+// }
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+// ACCORIAN
+#accordion div, #accordion .pointer, #accordion h3, #accordion #accordion-item, #accordion section.instruct-container {
+  @include transition(all 0.5s ease-in-out);
+  h3 {
+  font-family: $font-primary;
+//   padding-bottom: 2px !important;
+//   text-decoration: underline;
+//   margin-bottom: 2px !important;
+  }
+}
+#accordion div, #accordion {
+  overflow:hidden;
+  height:auto;
+  opacity: 1;
+  .underline {
+    border-bottom: 1px solid white;
+}
+//   background-color: transparent;
+}
+// #accordion {
+//   margin-bottom:30px;
+// }
+// #accordion h3 {
+//   margin:0;
+//   padding: 10px 10px 10px 30px;
+// }
+
+// #accordion h1 a {
+//   color:black;
+// }
+
+// #accordion section {
+//   padding:0 10px;
+//   color:black;
+// }
+// #accordion div.ac-hidden p:not(.pointer) {
+//   color:#fff;
+// }
+
+#accordion div.ac-hidden {
+  cursor: pointer;      
+  height:30px;
+  h3 {
+  font-family: $font-primary;
+//   text-decoration: underline;
+//   padding-bottom: 2px !important;
+//   margin-bottom: 2px !important;
+  }
+//   background-color: #fff;
+}
+#accordion section.instruct-container {
+  opacity: 0;
+}
+#accordion .pointer {
+  padding:0;
+  // margin: 8px 0 0 6px;
+//   line-height:20px;
+//   width:13px;
+  position:absolute;
+}
+#accordion div:not(.ac-hidden) section.instruct-container {
+  opacity: 1;  
+  margin-left: 10px;
+}
+
+#accordion div:not(.ac-hidden) .pointer {
+  display:block;
+  @include transform(rotate(90deg));
+  padding:0;
+}

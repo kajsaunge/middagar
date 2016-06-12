@@ -1,0 +1,336 @@
+// GRID
+.row {
+		@include display(flex);
+		@include flex-direction(row);
+		@include justify-content(center);
+    @include align-items(center);
+    @include align-self(center);
+}
+.col {
+    @include display(flex);
+    @include flex-direction(column);
+    //@include justify-content(flex-start);
+		//@include align-items(flex-start);
+		//@include align-self(flex-start);
+}
+.center {
+    @include justify-content(center);
+		@include align-items(center);
+		@include align-self(center);
+}
+.col-row {
+	@include display(flex);
+	@include flex-direction(column);
+	width: 100%;
+	max-width: 100%;
+	@include mf-small {
+		max-width: 75%;
+	}
+	@include mf-medium {
+		@include flex-direction(row);
+		max-width: 100%;
+	}
+}
+
+
+/* // SITE
+////////////////////////////////////////////////////////////////////// */
+
+
+// TIS GRID IT IS
+
+.site {
+	@include display(flex);
+	@include flex-direction(column);
+	height: 100vh;
+	margin: 0 auto;
+	@include justify-content(space-between);
+	@include flex(1 1 auto);
+	@include align-items(stretch);
+}
+.header-site {
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include flex(0 1 100);
+    width: 100%;
+    //margin-bottom: 0; // 60px without this - main container overflows the header
+    height: 100px;
+    min-height: 100px;
+}
+#nav-primary {
+	@include display(flex);
+	@include justify-content(space-around);	
+    width: 100%;
+	// height: 70px;
+	a {
+	font-size: 8pt;
+	letter-spacing: 2px;
+	// color: $yellow;	
+	}
+	@include mf-medium {
+		padding: 10px 20%;
+		a {
+			font-size: 10pt;
+		}
+	}
+}
+
+.container-main {
+	@include display(flex);
+	@include flex-direction(column);
+	@include flex(1 0 auto);
+	margin-bottom: 5em;
+	//margin: 0 auto;
+		@include mf-medium {
+        margin-top: 5em;
+		}
+}
+.nav-main,
+.aside-main {
+	@include flex(1 1 auto);
+	padding:1em;
+	min-width: 20%;
+}
+.nav-main {
+}
+.content {
+    @include display(flex);
+	@include flex(1 1 auto);
+	@include flex-wrap(wrap);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+	@include mf-small {
+		// padding: 20px;
+		// background-color: lighten($off-white, 1%);
+	}
+	@include mf-small-up {
+		// padding: 50px;
+		// background-color: lighten($off-white, 1%);
+	}
+	@include mf-medium {
+        width: 80%;
+        max-width: 80%;
+		color: green !important;
+    }
+	@include mf-large {
+        width: 60%;
+        max-width: 60%;
+    }
+}
+.aside-main {
+
+}
+
+.footer-site {
+	@include flex(1 0 auto);
+	// background-color: $primary;
+	min-height: 60px;
+	padding:1em;
+	#nav-secondary {
+		@include display(flex);
+		@include flex-direction(column);
+		@include justify-content(flex-start);	
+		letter-spacing: 2px;
+		a {
+			font-size: 10pt;
+		}
+	}
+}
+
+.flex-container {
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include flex(1 1 auto);
+}
+.flex-item {
+	@include flex(1 0 45%);
+	@include mf-medium {
+		@include flex(1 0 30%);
+	}
+}
+.flex-item-full {
+    @include flex(1 1 105%);
+	padding: 1.5em;
+		@include mf-small {
+			padding: 2em;
+		}
+}
+.flex-item-half {
+	@include flex(1 1 50%);
+	@include mf-mobile {
+	}
+	@include mf-small-up {
+		@include flex(1 0 40%);
+	}
+}
+.flex-container_multiple {
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include flex(1 1 auto);
+	padding: 1.5em;
+		@include mf-small {
+			padding: 2em;
+		}
+}
+
+.flex-item-multiple {
+	@include flex(1 1 60%);
+	@include mf-small {
+		@include flex(1 0 45%);
+	}
+	@include mf-small-up {
+		@include flex(1 0 33%);
+	}
+	// &:last-child {
+	// 	padding-bottom: 50px;
+	// }
+}
+.s-row-start {
+	@include display(flex);
+    @include justify-content(flex-start);
+    @include flex(1 1 100%);
+	padding:1em;
+}
+
+.s-row-center {
+	@include display(flex);
+    @include justify-content(center);
+    @include flex(1 1 100%);
+	padding:1em;
+	margin: 1em;
+}
+// AJDUSMENTS
+ .s-col-start {
+	@include display(flex);
+	@include flex-direction(column);
+    @include justify-content(flex-start);
+    @include flex(1 1 100%);
+}
+
+// RECEPIES
+.instruct-container {
+	@include display(flex);
+	@include flex-direction(row);
+	p {
+		margin-bottom: -20px;
+
+	}
+	&:last-child {
+			padding-bottom: 40px;
+		}
+	.instruct-item {
+		
+	} 
+}
+
+.instruct-number {
+	
+}
+.instruct-text {
+	
+}
+
+.s-col-start_m-row {
+	@include display(flex);
+	@include flex-direction(column);
+    @include justify-content(flex-start);
+    @include flex(1 1 100%);
+	
+	@include mf-medium {
+	@include flex-direction(row);
+		visibility: visible;
+	}
+}
+
+// .pipe {
+// 	visibility: hidden;
+// 	@include mf-medium {
+// 		visibility: visible;
+// 	}
+// }
+.s-no-mrg {
+	margin-left: 0;
+}
+.headin-no-wrap {
+	min-width: 260px;
+}
+
+
+
+
+
+
+
+
+
+
+
+// WIDTHS AND HEIGHTS
+.fit         { max-width: 100%; }
+.half-width  { width: 50% }
+.full-width  { width: 100%; }
+.full-height { height: 100%; }
+
+// POSITION AND Z-INDEX
+.fixed    { position: fixed; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.static   { position: static; }
+
+.zindex-1 { z-index: 1; }
+.zindex-2 { z-index: 2; }
+.zindex-3 { z-index: 3; }
+
+.pin-top-right {
+    top: 0;
+    right: 0;
+}
+
+.pin-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+// DISPLAY
+.inline       { display: inline; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.hide         { display: none; }
+.flex         { display: flex; }
+
+// VISIBILITY
+.hide-on-small { display: none; }
+.show-in-large { display: block; }
+
+// ALIGNMENTS
+
+.s-align-center {
+
+}
+.l-align-left {
+
+}
+
+// .s-pdg-mrg-05_m-1 {
+// 	margin: .5em;
+// 	padding:.5em;
+//         @include mf-medium {
+// 			margin: 1em;
+// 			padding:2em;
+//         }
+// }
+// .s-pdg-05_m-1 {
+// 	padding:.5em;
+//         @include mf-medium {
+// 			padding:1em;
+//         }
+// }
+.pdg-1_s-2 {
+	padding: 1.5em;
+	@include mf-small {
+		padding: 2em;
+	}	
+}

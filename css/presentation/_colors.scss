@@ -1,0 +1,131 @@
+
+// APP SPECIFIC
+$primary: #607D8B; // blue-grey
+$primary-tint: lighten($primary, 10%);
+$primary-shade: darken($primary, 10%);
+
+// use this for "home-bg"
+$secondary: #FF5252;
+$secondary-tint: lighten($secondary, 10%);
+$secondary-shade: darken($secondary, 10%);
+
+$tertiary: #212121;
+$tertiary-tint: lighten($secondary, 10%);
+$tertiary-shade: darken($secondary, 10%);
+
+ // BASIC
+$black     :   #000;
+$white     :   #fff;
+$off-white :   #f1f1f1;
+$gray      :   #666;
+$gray-tint: lighten($gray, 10%);
+$gray-shade: darken($gray, 10%);
+$gray-333 :   #333;
+
+
+// FOOD COLORS
+$pink: #C2185B;
+$purple: #9C27B0;
+$teal: #009688;
+$green: #4CAF50;
+$light-green: #8BC34A;
+$indigo: #303F9F;
+$blue: #448AFF;
+$cyan: #00BCD4;
+$orange: #FF5722;
+$yellow: #FFC107;
+
+
+// MESSAGES
+$notice    :   #3498db;
+$success   :   #1abc9c;
+$alert     :   #e74c3c;
+
+.bg-trans { 
+    background-color: transparent;
+}
+// BACKGROUNDS
+.bg-primary       { background-color: $primary;}
+.bg-secondary     { background-color: $secondary;}
+.bg-tertiary      { background-color: $tertiary;}
+.bg-tertiary-tint-5 { background-color: lighten($tertiary, 5%);}
+.bg-tertiary-tint { background-color: lighten($tertiary, 10%);}
+
+.bg-white         { background-color: $white; }
+.bg-off-white     { background-color: $off-white; }
+.bg-gray          { background-color: $gray; }
+.bg-gray-tint     { background-color: $gray-tint; }
+.bg-gray-shade    { background-color: $gray-shade; }
+.bg-gray-333      { background-color: $gray-333; }
+
+.bg-pink          { background-color: $pink; }
+.bg-pink-tint     { background-color: lighten($pink,10%); }
+.bg-pink-shade    { background-color: darken($pink,10%); }
+.bg-pink-shade-1    { background-color: darken($pink,5%); }
+.bg-pink-shade-2  { background-color: darken($pink,15%); }
+.bg-pink-shade-3  { background-color: darken($pink,20%); }
+.bg-pink-shade-4  { background-color: darken($pink,25%); }
+ 
+.bg-purple          { background-color: $purple; }
+.bg-purple-tint     { background-color: lighten($purple,10%); }
+.bg-purple-shade    { background-color: darken($purple,10%); }
+.bg-purple-shade-1    { background-color: darken($purple,5%); }
+.bg-purple-shade-2  { background-color: darken($purple,15%); }
+.bg-purple-shade-3  { background-color: darken($purple,20%); }
+.bg-purple-shade-4  { background-color: darken($purple,25%); }
+
+.bg-teal          { background-color: $teal; }
+.bg-teal-tint     { background-color: lighten($teal,10%); }
+.bg-teal-shade    { background-color: darken($teal,10%); }
+.bg-teal-shade-1    { background-color: darken($teal,5%); }
+.bg-teal-shade-2  { background-color: darken($teal,15%); }
+.bg-teal-shade-3  { background-color: darken($teal,20%); }
+.bg-teal-shade-4  { background-color: darken($teal,25%); }
+
+.bg-green          { background-color: $green; }
+.bg-green-tint     { background-color: lighten($green,10%); }
+.bg-green-shade    { background-color: darken($green,10%); }
+.bg-green-shade-1    { background-color: darken($green,5%); }
+.bg-green-shade-2  { background-color: darken($green,15%); }
+.bg-green-shade-3  { background-color: darken($green,20%); }
+.bg-green-shade-4  { background-color: darken($green,25%); }
+
+.bg-light-green          { background-color: $light-green; }
+.bg-light-green-tint     { background-color: lighten($light-green,10%); }
+.bg-light-green-shade    { background-color: darken($light-green,10%); }
+.bg-light-green-shade-1    { background-color: darken($light-green,5%); }
+.bg-light-green-shade-2  { background-color: darken($light-green,15%); }
+.bg-light-green-shade-3  { background-color: darken($light-green,20%); }
+.bg-light-green-shade-4  { background-color: darken($light-green,25%); }
+
+.bg-indigo          { background-color: $indigo; }
+.bg-indigo-tint     { background-color: lighten($indigo,10%); }
+.bg-indigo-shade    { background-color: darken($indigo,10%); }
+.bg-indigo-shade-1  { background-color: darken($indigo,5%); }
+.bg-indigo-shade-2  { background-color: darken($indigo,15%); }
+.bg-indigo-shade-3  { background-color: darken($indigo,20%); }
+.bg-indigo-shade-4  { background-color: darken($indigo,25%); }
+
+.bg-blue          { background-color: $blue; }
+.bg-blue-tint     { background-color: lighten($blue,10%); }
+.bg-blue-shade    { background-color: darken($blue,10%); }
+.bg-blue-shade-1  { background-color: darken($blue,5%); }
+.bg-blue-shade-2  { background-color: darken($blue,15%); }
+.bg-blue-shade-3  { background-color: darken($blue,20%); }
+.bg-blue-shade-4  { background-color: darken($blue,25%); }
+
+.bg-cyan          { background-color: $cyan; }
+.bg-cyan-tint     { background-color: lighten($cyan,10%); }
+.bg-cyan-shade    { background-color: darken($cyan,10%); }
+.bg-cyan-shade-1  { background-color: darken($cyan,5%); }
+.bg-cyan-shade-2  { background-color: darken($cyan,15%); }
+.bg-cyan-shade-3  { background-color: darken($cyan,20%); }
+.bg-cyan-shade-4  { background-color: darken($cyan,25%); }
+
+.bg-orange          { background-color: $orange; }
+.bg-orange-tint     { background-color: lighten($orange,10%); }
+.bg-orange-shade    { background-color: darken($orange,10%); }
+.bg-orange-shade-1  { background-color: darken($orange,5%); }
+.bg-orange-shade-2  { background-color: darken($orange,15%); }
+.bg-orange-shade-3  { background-color: darken($orange,20%); }
+.bg-orange-shade-4  { background-color: darken($orange,25%); }
