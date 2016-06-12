@@ -154,8 +154,12 @@
 .flex-item-full {
     @include flex(1 1 105%);
 	padding: 1.5em;
+	h1 { margin-top: 60px; } 
 		@include mf-small {
 			padding: 2em;
+		}
+		@include mf-medium {
+			h1 { margin-top: 30px; }
 		}
 }
 .flex-item-half {
