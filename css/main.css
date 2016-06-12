@@ -2702,9 +2702,14 @@
   -ms-flex: 1 1 105%;
   flex: 1 1 105%;
   padding: 1.5em; }
+  .flex-item-full h1 {
+    margin-top: 60px; }
   @media only screen and (min-width: 35em) {
     .flex-item-full {
       padding: 2em; } }
+  @media only screen and (min-width: 62.5em) {
+    .flex-item-full h1 {
+      margin-top: 30px; } }
 
 .flex-item-half {
   -webkit-box-flex: 1;
@@ -4631,9 +4636,14 @@ input[type=radio]:checked ~ label .radio-dot {
   -ms-flex: 1 1 105%;
   flex: 1 1 105%;
   padding: 1.5em; }
+  .flex-item-full h1 {
+    margin-top: 60px; }
   @media only screen and (min-width: 35em) {
     .flex-item-full {
       padding: 2em; } }
+  @media only screen and (min-width: 62.5em) {
+    .flex-item-full h1 {
+      margin-top: 30px; } }
 
 .flex-item-half {
   -webkit-box-flex: 1;
